@@ -1,0 +1,1367 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/***THIS FIXES THE PROBLEM OF THE HORIZONTAL SCROLL ------------------***/
+.row 	{
+  	margin-left: 0px;
+  	margin-right: 0px;
+		}
+
+/*** BACK TO TOP PLUGIN ----------------------------------------- ***/
+.cd-top {
+	background-color: rgb(133, 133, 133);
+	color: white;
+
+	display: table;
+	text-align: center;
+}
+
+.no-touch .cd-top:hover {
+	background-color: rgb(109, 128, 63);
+}
+#backToTop{ /*Icon inside of the square*/
+	color: white;
+	display: table-cell;
+  	vertical-align: middle;
+}
+/*** FONT DECLARATION ----------------------------------------- ***/
+p{
+    line-height:2;
+}
+
+.wrapperHeading{
+    padding:0;
+}
+.headingh3{
+	max-width: 600px;
+}
+h2{
+	margin-bottom: 20px;
+}
+h3{
+	margin-bottom: 60px;
+}
+.bold{
+	font-weight: bold;
+}
+.fontLobster{
+	font-family: 'Lobster', cursive, Times, Serif;
+}
+
+/***COLOR DECLARATION --------------------------------------------***/
+.lightGreen{
+	background-color: rgb(136, 179, 35);
+}
+.lightGreenFont{
+	color:rgb(136, 179, 35); 	
+}
+.strongGreen{
+  	background-color: rgb(109, 128, 63);
+}
+.strongGreenFont{
+  	color:rgb(109, 128, 63);	
+}
+.yellow{
+ 	background-color: rgb(230, 206, 22);
+}
+.yellowFont{
+ 	color: rgb(230, 206, 22);
+}
+.gray{
+  	background-color: rgb(133, 133, 133);
+}
+.grayFont{
+  	color: rgb(133, 133, 133);
+}
+.black{
+	background-color: black;
+}
+.blackFont{
+	color: black;
+}
+.white{
+	background-color: white;
+}
+.whiteFont{
+	color: white;
+}
+
+/*** -- OTHER THINGS DECLARATION------------------------------------------------------ ***/
+.placeHolder{
+    margin-top: 0px;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+.placeHolderTitle{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+/*** -- NAVIGATION------------------------------------------------------ ***/	
+
+/*	inside of navbar-nav/li/a:	
+	<div class="**COLOR**">
+		<span class="fa **ICON**"></span>
+		<span class="title">**TITLE**</span>
+	</div>
+*/
+/*Phone*/
+.staticNav{
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+@media only screen
+and (max-width: 700px)
+{
+.staticNav{
+	background-image: url(../img/carousel/loli-assets/loli500.jpeg);
+	}
+}
+
+/*Desktop*/
+@media only screen
+and (min-width: 700px)
+and (max-width: 1000px)
+{
+.staticNav{
+	background-image: url(../img/carousel/loli-assets/loli1000.jpeg);
+	}
+}
+
+
+/*Large desktop*/
+@media only screen
+and (min-width: 1000px)
+{
+.staticNav{
+	background-image: url(../img/carousel/loli-assets/loli2000.jpeg);
+	}
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: white;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: rgb(230, 206, 22);
+}
+.navbar-default .navbar-toggle{
+	background-color: #ddd;
+}
+	
+.navbarWrapper{/*Navbar overtop carousel*/
+	position: absolute; /*This keep the navigation as a block*/
+	top: 0;
+  	right: 0;
+  	left: 0;
+  	z-index: 200;
+}
+
+#ulMenu{
+	padding-top: 15px;
+}
+.navbar-nav li a{
+	padding-top: 0px;
+	padding-bottom: 8px;
+}
+
+.navbar-nav div{
+	width: 205px;
+	height: 40px;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.navbar-nav .fa{
+	margin-right: 15px;
+	margin-left: 15px;
+	font-size: 24px;
+}
+.navbar-nav .title{
+	font-size:18px;
+}
+.navbar-header{
+	height: 60px;
+	background-color: rgb(133, 133, 133);
+	font-family: 'Lobster', cursive, Times, Serif;
+}
+/*Style of the Brand*/
+.navbar-brand{
+	padding-top: 10px;
+}
+.headTitleBrand{
+	padding-left: 10px;
+	font-size: 30px;
+	line-height: 25px;
+}
+.headDescriptionBrand{
+	font-size: 15px;
+	text-indent: 30px;
+}
+/*Removing padding of the container-fluid*/
+div#navigation.container-fluid.navbarWrapper{
+		padding-left: 0px;
+		padding-right: 0px;
+}
+
+@media only screen
+and (min-width: 700px)
+{
+	#bs-example-navbar-collapse-1{
+		padding: 0px;/*To fit all the icons in one row*/
+	}
+	.navbar-nav li a{
+		padding: 0; /*Removing padding from <a>*/
+	}
+	
+	#firstButton{
+		border-radius: 30px 0px 0px 0px; /*round border of first button*/
+		border-left: 0px;
+	}
+	#lastButton{
+		border-radius: 0px 0px 30px 0px; /*round border of second button*/
+		border-right: 0px; 
+	}
+
+	.navbar-nav div{ /*Resize the icon and adding white border between buttons*/
+	border-left: 1px solid white; 
+	border-right: 1px solid white;
+	width: 165px;
+	height: 135px;
+	}
+	.navbar-nav .fa{ 
+	font-size: 70px; /*bigger size*/
+	display: block;  /*Display:block to bring text below and higher*/
+	text-align: center;  /*horizontal aligh*/
+	margin-top: 10px;/*vertical align*/
+	}
+	.navbar-nav .title{
+	font-size:18px;
+	margin-top: 15px; /*vertical align*/
+	margin-left: auto; /*horizontal align*/
+  	margin-right: auto;
+  	float:none;
+   	display: table;
+  	table-layout: fixed;
+	}
+}
+/* CAROUSEL ================================================================*/
+
+.carouselSlide{ /*Allow div to be display*/
+
+	width:100%; 	/*Select the width*/
+	height:700px; 	/*Select the height*/
+	
+  	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow:hidden;
+	display:block;
+}
+
+/*Caption and text inside caption*/
+#carousel-example-generic .carousel-caption{
+	background-color: rgba(230, 206, 22, 0.6);
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	top: 87%;
+	font-size: 20px;
+}
+
+/*Indicators*/
+
+#carousel-example-generic .carousel-indicators{
+	bottom: 100px;
+}
+.carousel-control{
+	z-index: 100;
+}	
+
+/*Brand Title*/
+.brandTitle{/*Brand location for the rest of the pages*/
+	position: absolute;
+	top: 11%;
+	left: 50%;
+	z-index: 50;
+	transform: translate(-50%,0);
+}
+#indexBrand{ /*Brand location for index page*/
+    position: absolute;
+	top:25%;
+	left: 50%;
+	z-index: 50;
+	transform: translate(-50%,0);
+}
+.wrapperBrand{
+	background-color: rgba(133, 133, 133, 0.6);
+	position: relative;
+	height: 95px;
+	left: -32.5%;
+	width: 400px;
+	font-family: 'Lobster', cursive, Times, Serif;
+	line-height: 38px;
+}
+.headTitle{
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 50px;
+}
+.headDescription{
+	font-size: 22px;
+	text-indent: 30px;
+}
+
+#masterBrandTitle{
+    margin-top: 90px;
+}
+
+/* Images ==========================================*/
+/*Phone*/
+@media only screen
+and (max-width: 700px)
+{
+	#DSC_3716_jpg{
+		background-image: url(../img/carousel/piscina-assets/piscina500.jpeg);
+	}
+	#portada_jpeg{
+	background-image: url(../img/carousel/parcela-assets/parcela500.jpeg);
+	}
+	#moy5_jpg{
+	background-image: url(../img/carousel/loli-assets/loli500.jpeg);
+	}
+		#erte_jpg{
+	background-image: url(../img/carousel/casa-assets/casa500.jpeg);
+	}
+}
+
+/*Desktop*/
+@media only screen
+and (min-width: 700px)
+and (max-width: 1000px)
+{
+	#DSC_3716_jpg{
+		background-image: url(../img/carousel/piscina-assets/piscina1000.jpeg);
+	}
+	#portada_jpeg{
+	background-image: url(../img/carousel/parcela-assets/parcela1000.jpeg);
+	}
+	#moy5_jpg{
+	background-image: url(../img/carousel/loli-assets/loli1000.jpeg);
+	}
+		#erte_jpg{
+	background-image: url(../img/carousel/casa-assets/casa1000.jpeg);
+	}
+}
+
+/*Large desktop*/
+@media only screen
+and (min-width: 1000px)
+{
+	#DSC_3716_jpg{
+		background-image: url(../img/carousel/piscina-assets/piscina2000.jpeg);
+	}
+	#portada_jpeg{
+	background-image: url(../img/carousel/parcela-assets/parcela2000.jpeg);
+	}
+	#moy5_jpg{
+	background-image: url(../img/carousel/loli-assets/loli2000.jpeg);
+	}
+	#erte_jpg{
+	background-image: url(../img/carousel/casa-assets/casa2000.jpeg);
+	}
+}
+
+/* TODOS TRABAJOS =======================================================*/
+
+#trabajos{
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+#trabajos h3{
+	max-width: 600px;
+}
+#todosTrabajos{
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+#todosTrabajos h3{
+	max-width: 600px;
+}
+.imageblock{
+	position: relative;
+	margin-bottom: 20px;
+}
+.imageblock .textWrapper{
+	position: absolute;
+	top: 76%;
+	width: 200px;
+	height: 75px;
+}
+.imageblock .firstCol{
+	width: 90px;
+	height: 75px;
+	padding-right: 10px;
+}
+.imageblock .textWrapper .item{
+	font-size: 18px;
+}
+.imageblock .textWrapper .price{
+	font-size: 18px;
+}
+.imageblock .textWrapper .link{
+	font-size: 12px;	
+}
+.imageblock .secondCol{
+	width: 60px;
+	height: 75px;
+	color: white;
+	font-size: 32px;
+}
+
+
+/*** ADVERTISEMENT---------------------------------------------------------- ***/
+/*
+<div class="container-fluid" id="**ENTERID**">
+
+#**ENTERID**{
+	background-image: url(../welcomeAssets/roof.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: **ENTER**;
+	width: 100%;
+}
+*/
+#advertisement{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/*Phone*/
+@media only screen
+and (max-width: 700px)
+{
+#advertisement{
+	background-image: url(../img/others/techo500.jpeg);
+	}
+}
+
+/*Desktop*/
+@media only screen
+and (min-width: 700px)
+and (max-width: 1000px)
+{
+#advertisement{
+	background-image: url(../img/others/techo1000.jpeg);
+	}
+}
+
+/*Large desktop*/
+@media only screen
+and (min-width: 1000px)
+{
+#advertisement{
+	background-image: url(../img/others/techo2000.jpeg);
+	}
+}
+
+#advertisement h1{
+	margin-top: 54px;
+	font-size: 80px;
+}
+#advertisement h2{
+	margin-top: 30px;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+.buttonLink .fa{	
+	font-size: 22px;
+	margin-left: 15px;
+}
+a.buttonLink{
+	color: white;
+	padding: 0 55px 0 55px;
+	height: 55px;
+	font-size: 22px;
+	font-family: 'Lobster', cursive, Times, Serif;
+	background-color: rgb(109, 128, 63);
+	color: white;
+	text-align: center;
+	display: table-cell; /*No width with this*/
+	vertical-align: middle;
+}
+a.buttonLink:hover{
+	text-decoration: none;
+	border: 2px solid white;
+}
+/*** -- QUIENES SOMOS----------------------------------------------- ***/
+
+#quienSomos{
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+#quienSomos div{
+	font-size: 85px;
+}
+#quienSomos p{
+	font-size: 16px;
+	max-width: 500px;
+}
+#quienSomos div.fa{
+	font-size: 120px;
+}
+
+@media only screen
+and (min-width: 700px)
+and (max-width: 1000px)
+{
+	#quienSomos div.fa{  /*Align icon to right*/
+	margin-left: auto;
+  	margin-right: 20px;
+  	float:none;
+   	display: table;
+  	table-layout: fixed;
+	}
+
+	#quienSomos p{	/*Align texts to left*/
+	font-size: 16px;
+	max-width: 500px;
+	margin-left: 0px;
+  	margin-right: auto;
+  	float:none;
+   	display: table;
+  	table-layout: fixed;	
+	}
+
+}
+
+@media only screen
+and (min-width: 1000px)
+{
+	#quienSomos p{
+		max-width: 280px; /*Reducing the width of the paragraph*/
+	}	
+
+}
+
+/*** -- BIG IMAGES----------------------------------------------- ***/
+
+.lastColumn{
+    padding-bottom:30px;
+}
+#bigImages{
+    padding-left:0;
+    padding-right:0;
+}
+#bigImages p{
+	font-size: 16px;
+	max-width: 400px; /*Size of the image*/
+}
+/*Baños----------------------------------------------*/
+.titleSub h3{
+	border-bottom: 8px solid rgb(230, 206, 22);
+	display: inline-block;
+	margin-bottom: 0; /*underline*/
+}
+
+.titleSub{/*underline*/
+	border-bottom: 1px solid rgb(230, 206, 22);
+	margin-bottom: 20px;
+}
+
+#bigImages .inverseWrapper .titleSub{
+    max-width: 400px;
+}
+/*Cocina----------------------------------------------*/
+.titleSubCocina h3{
+	border-bottom: 8px solid rgb(136, 179, 35);
+	display: inline-block;
+	margin-bottom: 0; /*underline*/
+}
+
+.titleSubCocina{/*underline*/
+	border-bottom: 1px solid rgb(136, 179, 35);
+	margin-bottom: 20px;
+}
+#bigImages .inverseWrapper .titleSubCocina{
+    max-width: 400px;
+}
+/*Piscina----------------------------------------------*/
+.titleSubPiscina h3{
+	border-bottom: 8px solid rgb(133, 133, 133);
+	display: inline-block;
+	margin-bottom: 0; /*underline*/
+}
+
+.titleSubPiscina{/*underline*/
+	border-bottom: 1px solid rgb(133, 133, 133);
+	margin-bottom: 20px;
+}
+#bigImages .inverseWrapper .titleSubPiscina{
+    max-width: 400px;
+}
+
+#bigImages img{
+	margin-bottom: 0;
+}
+#bigImages .col-sm-6{
+	padding-right: 0;
+	padding-left: 0;
+}
+#bigImages .wrapper{
+	padding-right: 60px;
+}
+#bigImages .inverseWrapper{
+	padding-left: 60px;
+}
+
+
+@media only screen
+and (max-width: 700px)
+{
+	#bigImages .rightNavbar{ /*Reset positioning*/
+  	margin-left: 0;
+  	margin-right: 0;
+	}
+	#bigImages .leftNavbar{ /*Reset positioning*/
+  	margin-left: 0;
+  	margin-right: 0;
+	}
+
+	#bigImages .col-sm-6{ /*Recenter all elements*/
+	margin-left: auto;
+  	margin-right: auto;
+  	float:none;
+   	display: table;
+  	table-layout: fixed;
+	}
+	#bigImages .wrapper{/*Removing left padding*/
+	padding: 0;
+	}
+    #bigImages .inverseWrapper{/*Removing right padding*/
+	padding: 0;
+	}
+}
+
+/*** -- FOOTER--------------------------------------------------- ***/
+#footer{
+	background-image: url(../img/others/footer.jpeg);
+	background-repeat: no-repeat;;
+	background-size: cover;
+}
+#footer .fa-facebook-square{
+	margin-right: 15px;
+}
+#footer .fa-twitter-square{
+	margin-right: 15px;
+}
+#footer .fa{
+	font-size: 35px;
+	margin-bottom: 15px;
+}
+#footer .row1wrapper{
+	margin-top: 15px;
+}
+#footer h4{
+	font-size: 14px;
+}
+
+/** CONTACT FORM ======================================================= **/
+.labelCss{
+    margin-top: 30px;
+    display: block;
+}
+.textBoxRow{
+	height: 50px;
+	width: 300px;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.textBoxSquare{
+	height: 300px;
+	width: 100%;
+	min-width: 300px;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+#contactForm p{
+	font-size: 16px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+#contactForm h2{
+	font-size: 44px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+#contactForm h1{
+	font-size: 70px;
+	font-weight: bold;
+	line-height: 0.3;
+}
+#contactForm h1.indented{
+	text-indent: 60px;
+	margin-bottom: 40px;
+}
+/*text-indent: 30px;*/
+#contactForm h3{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 35px;
+	max-width: 500px;
+	line-height: 1.4;
+}
+
+#contactForm .backgroundForm{
+	background-image: url(../welcomeAssets/portada.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 850px;
+}
+
+#contactForm .wrapperForm{
+	max-width: 644px;
+}
+
+#contactForm .contactButton{
+	width: 300px;	
+}
+#contactForm .headerBackground{
+	font-size:30px;
+	margin: 30px 0px 0px 30px;
+	/*background-color: rgba( 133, 133, 133, 0.3);*/
+	/*width: 200px;*/
+}
+#contactForm .backgroundSentence{
+	/*background-color: rgba( 133, 133, 133, 0.3);*/
+							/*230, 206, 22*/
+	margin: 0;
+	padding: 5px 10px 5px 10px;
+	max-width: 350px;
+}
+/*** UTILITIES FRAMEWORK======================================== ***/
+.verticalAlign{
+    display: flex;
+    align-items: center;
+}
+.centerInsideV{ /*Center the elements inside of a div. NOT USE WITH display:block or float:left*/
+	display: table-cell;
+	vertical-align: middle;
+}
+.center-vertically{
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 100vh; /* These two lines are counted as one :-)       */
+
+	display: flex;
+	align-items: center;
+}
+.CenterNavbar/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+  	margin-left: auto;
+  	margin-right: auto;
+  	float:none;
+   	display: table;
+  	table-layout: fixed;
+}
+.rightNavbar/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+  	margin-left: auto;
+  	margin-right: 0px;
+  	float:none;
+   	display: table;
+  	table-layout: fixed;
+}
+.leftNavbar/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+  	margin-left: 0px;
+  	margin-right: auto;
+  	float:none;
+   	display: table;
+  	table-layout: fixed;
+}
+
+.clearNavbar/*navbar-default*/{ /*Clear background and border from nav*/
+	background: transparent;
+	border:0;
+	box-shadow: none;
+}
+.pRight20{
+	padding-right: 20px;
+	
+}
+.pRight30{
+	padding-right: 30px;
+}
+.pRight40{
+	padding-right: 40px;
+}
+.pRight50{
+	padding-right: 50px;
+}
+.pLeft20{
+	padding-left: 20px;
+}
+.pLeft30{
+	padding-left: 30px;
+}
+.pLeft40{
+	padding-left: 40px;
+}
+.pLeft50{
+	padding-left: 50px;
+}
+.m10{
+	margin-bottom: 10px;
+}
+.m20{
+	margin-bottom: 20px;
+}
+.m30{
+	margin-bottom: 30px;
+}
+/*bottom margin*/
+.m40{
+	margin-bottom: 40px;
+}
+.m50{
+	margin-bottom: 50px;
+}
+.m60{
+	margin-bottom: 60px;
+}
+.m70{
+	margin-bottom: 70px;
+}
+.m80{
+	margin-bottom: 80px;
+}
+/*Top margin*/
+.mtop10{
+    margin-top: 10px;
+}
+.mtop20{
+    margin-top: 20px;
+}
+.mtop30{
+    margin-top: 30px;
+}
+.mtop40{
+	margin-top: 40px;
+}
+.mtop50{
+	margin-top: 50px;
+}
+.mtop60{
+	margin-top: 60px;
+}
+.mtop70{
+	margin-top: 70px;
+}
+.mtop80{
+	margin-top: 80px;
+}
+
+.resetMargin{
+	margin: 0px;
+}
+.resetPadding{
+	padding:0px;
+}
+
+/*MEDIA QUERIES FRAMEWORK===================================================*/
+@media only screen
+and (max-width: 700px)
+{
+	.resetPadding-xs{
+		padding: 0;
+	}
+	.m10-xs{
+	margin-bottom: 10px;
+	}
+	.m20-xs{
+	margin-bottom: 20px;
+	}
+	.m30-xs{
+		margin-bottom: 30px;
+	}
+
+	.m40-xs{
+		margin-bottom: 40px;
+	}
+	.m50-xs{
+		margin-bottom: 50px;
+	}
+	.m60-xs{
+		margin-bottom: 60px;
+	}
+	.m70-xs{
+		margin-bottom: 70px;
+	}
+	.m80-xs{
+		margin-bottom: 80px;
+	}
+    .mtop10-xs{
+	    margin-top: 10px;
+	}
+	.mtop20-xs{
+	    margin-top: 20px;
+	}
+	.mtop30-xs{
+	    margin-top: 30px;
+	}
+
+	.mtop40-xs{
+		margin-top: 40px;
+	}
+	.mtop50-xs{
+		margin-top: 50px;
+	}
+	.mtop60-xs{
+		margin-top: 60px;
+	}
+	.mtop70-xs{
+		margin-top: 70px;
+	}
+	.mtop80-xs{
+		margin-top: 80px;
+	}
+
+	.rightNavbar-xs/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+	  	margin-left: auto;
+	  	margin-right: 0px;
+	  	float:none;
+	   	display: table;
+	  	table-layout: fixed;
+	}
+	.leftNavbar-xs/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+	  	margin-left: 0px;
+	  	margin-right: auto;
+	  	float:none;
+	   	display: table;
+	  	table-layout: fixed;
+	}
+	.CenterNavbar-xs/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+  	margin-left: auto;
+  	margin-right: auto;
+  	float:none;
+   	display: table;
+  	table-layout: fixed;
+  	}	
+}
+/*Tablet*/
+@media only screen
+and (min-width: 700px)
+and (max-width: 1000px)
+{
+	.m10-sm{
+	    margin-bottom: 10px;
+	}
+	.m20-sm{
+	    margin-bottom: 20px;
+	}
+	.m30-sm{
+	    margin-bottom: 30px;
+	}
+	.m40-sm{
+		margin-bottom: 40px;
+	}
+	.m50-sm{
+		margin-bottom: 50px;
+	}
+	.m60-sm{
+		margin-bottom: 60px;
+	}
+	.m70-sm{
+		margin-bottom: 70px;
+	}
+	.m80-sm{
+		margin-bottom: 80px;
+	}
+    .mtop10-sm{
+	    margin-top: 10px;
+	}
+	.mtop20-sm{
+	    margin-top: 20px;
+	}
+	.mtop30-sm{
+	    margin-top: 30px;
+	}
+
+	.mtop40-sm{
+		margin-top: 40px;
+	}
+	.mtop50-sm{
+		margin-top: 50px;
+	}
+	.mtop60-sm{
+		margin-top: 60px;
+	}
+	.mtop70-sm{
+		margin-top: 70px;
+	}
+	.mtop80-sm{
+		margin-top: 80px;
+	}
+	.resetPadding-sm{
+		padding: 0px;
+	}		
+	.rightNavbar-sm/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+	  	margin-left: auto;
+	  	margin-right: 0px;
+	  	float:none;
+	   	display: table;
+	  	table-layout: fixed;
+	}
+	.leftNavbar-sm/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+	  	margin-left: 0px;
+	  	margin-right: auto;
+	  	float:none;
+	   	display: table;
+	  	table-layout: fixed;
+	}
+	.CenterNavbar-sm/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+  	    margin-left: auto;
+  	    margin-right: auto;
+  	    float:none;
+   	    display: table;
+  	    table-layout: fixed;
+	}
+}
+/*Desktop*/
+@media only screen
+and (min-width: 1000px)
+and (max-width: 1300px)
+{
+ 	.m10-md{
+	    margin-bottom: 10px;
+	}
+	.m20-md{
+	    margin-bottom: 20px;
+	}
+	.m30-md{
+	    margin-bottom: 30px;
+	}
+	.m40-md{
+		margin-bottom: 40px;
+	}
+	.m50-md{
+		margin-bottom: 50px;
+	}
+	.m60-md{
+		margin-bottom: 60px;
+	}
+	.m70-md{
+		margin-bottom: 70px;
+	}
+	.m80-md{
+		margin-bottom: 80px;
+	}
+    .mtop10-md{
+	    margin-top: 10px;
+	}
+	.mtop20-md{
+	    margin-top: 20px;
+	}
+	.mtop30-md{
+	    margin-top: 30px;
+	}
+
+	.mtop40-md{
+		margin-top: 40px;
+	}
+	.mtop50-md{
+		margin-top: 50px;
+	}
+	.mtop60-md{
+		margin-top: 60px;
+	}
+	.mtop70-md{
+		margin-top: 70px;
+	}
+	.mtop80-md{
+		margin-top: 80px;
+	}
+	.resetPadding-md{
+		padding: 0px;
+	}
+	.rightNavbar-md/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+	  	margin-left: auto;
+	  	margin-right: 0px;
+	  	float:none;
+	   	display: table;
+	  	table-layout: fixed;
+	}
+	.leftNavbar-md/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+	  	margin-left: 0px;
+	  	margin-right: auto;
+	  	float:none;
+	   	display: table;
+	  	table-layout: fixed;
+	}
+	.CenterNavbar-md/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+  	margin-left: auto;
+  	margin-right: auto;
+  	float:none;
+   	display: table;
+  	table-layout: fixed;
+	}
+
+}
+
+/*Large desktop*/
+@media only screen
+and (min-width: 1300px)
+{
+    .m10-lg{
+	    margin-bottom: 10px;
+	}
+	.m20-lg{
+	    margin-bottom: 20px;
+	}
+	.m30-lg{
+	    margin-bottom: 30px;
+	}
+	.m40-lg{
+		margin-bottom: 40px;
+	}
+	.m50-lg{
+		margin-bottom: 50px;
+	}
+	.m60-lg{
+		margin-bottom: 60px;
+	}
+	.m70-lg{
+		margin-bottom: 70px;
+	}
+	.m80-lg{
+		margin-bottom: 80px;
+	}
+    .mtop10-lg{
+	    margin-top: 10px;
+	}
+	.mtop20-lg{
+	    margin-top: 20px;
+	}
+	.mtop30-lg{
+	    margin-top: 30px;
+	}
+
+	.mtop40-lg{
+		margin-top: 40px;
+	}
+	.mtop50-lg{
+		margin-top: 50px;
+	}
+	.mtop60-lg{
+		margin-top: 60px;
+	}
+	.mtop70-lg{
+		margin-top: 70px;
+	}
+	.mtop80-lg{
+		margin-top: 80px;
+	}
+	.resetPadding-lg{
+		padding: 0px;
+	}
+	.rightNavbar-lg/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+	  	margin-left: auto;
+	  	margin-right: 0px;
+	  	float:none;
+	   	display: table;
+	  	table-layout: fixed;
+	}
+	.leftNavbar-lg/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+	  	margin-left: 0px;
+	  	margin-right: auto;
+	  	float:none;
+	   	display: table;
+	  	table-layout: fixed;
+	}
+	.CenterNavbar-lg/*navbar-nav*/{ /*Center Navbar and divs horizontally*/
+  	margin-left: auto;
+  	margin-right: auto;
+  	float:none;
+   	display: table;
+  	table-layout: fixed;
+	}
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

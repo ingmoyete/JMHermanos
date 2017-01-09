@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="anchorBaño" xml:space="preserve">
+    <value>Baños</value>
+  </data>
+  <data name="anchorCocinas" xml:space="preserve">
+    <value>Cocinas</value>
+  </data>
+  <data name="anchorConocenos" xml:space="preserve">
+    <value>Conocenos</value>
+  </data>
+  <data name="anchorContacto" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="anchorDetalles" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="anchorFachada" xml:space="preserve">
+    <value>Fachada</value>
+  </data>
+  <data name="anchorHome" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="anchorInteriores" xml:space="preserve">
+    <value>Interiores</value>
+  </data>
+  <data name="anchorNuestrosTrabajos" xml:space="preserve">
+    <value>Nuestros Trabajos</value>
+  </data>
+  <data name="anchorParcela" xml:space="preserve">
+    <value>Parcela</value>
+  </data>
+  <data name="anchorPresupuesto" xml:space="preserve">
+    <value>Presupuesto</value>
+  </data>
+  <data name="anchorQuienSomos" xml:space="preserve">
+    <value>¿Quienes Somos?</value>
+  </data>
+  <data name="anchorVideo" xml:space="preserve">
+    <value>Vea nuestro video de presentación</value>
+  </data>
+  <data name="headingBaño" xml:space="preserve">
+    <value>Baños</value>
+  </data>
+  <data name="headingCocinas" xml:space="preserve">
+    <value>Cocinas</value>
+  </data>
+  <data name="headingDetalles" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="headingFachada" xml:space="preserve">
+    <value>Fachadas</value>
+  </data>
+  <data name="headingInteriores" xml:space="preserve">
+    <value>Interiores</value>
+  </data>
+  <data name="headingNuestrosClientes" xml:space="preserve">
+    <value>Nuestros clientes</value>
+  </data>
+  <data name="headingParcela" xml:space="preserve">
+    <value>Parcelas</value>
+  </data>
+  <data name="headingQuienSomos" xml:space="preserve">
+    <value>Quienes Somos</value>
+  </data>
+  <data name="headingVideoPromocional" xml:space="preserve">
+    <value>Video Promocional</value>
+  </data>
+  <data name="metaBaños" xml:space="preserve">
+    <value>descriptcio nbaños</value>
+  </data>
+  <data name="metaCocinas" xml:space="preserve">
+    <value>descripción cocinas</value>
+  </data>
+  <data name="metaConocenos" xml:space="preserve">
+    <value>conocesnos descripcion</value>
+  </data>
+  <data name="metaContacto" xml:space="preserve">
+    <value>contacto descripcion</value>
+  </data>
+  <data name="metaDetalles" xml:space="preserve">
+    <value>descripcion detalles</value>
+  </data>
+  <data name="metaFachada" xml:space="preserve">
+    <value>descripcion fachada</value>
+  </data>
+  <data name="metaHome" xml:space="preserve">
+    <value>home description</value>
+  </data>
+  <data name="metaInteriores" xml:space="preserve">
+    <value>descripcion interiores</value>
+  </data>
+  <data name="metaNuestroTrabajo" xml:space="preserve">
+    <value>nuestro trabajos descripcion</value>
+  </data>
+  <data name="metaParcela" xml:space="preserve">
+    <value>descripcion Parcelsa</value>
+  </data>
+  <data name="metaPresupuesto" xml:space="preserve">
+    <value>presupuestos descripcionS</value>
+  </data>
+  <data name="titleBaño" xml:space="preserve">
+    <value>Nuestros Trabajos - Baños  |  JMHermanos</value>
+  </data>
+  <data name="titleCocinas" xml:space="preserve">
+    <value>Nuestros Trabajos - Cocinas  |  JMHermanos</value>
+  </data>
+  <data name="titleContact" xml:space="preserve">
+    <value>Contactar Para Reforma  |  JMHermanos</value>
+  </data>
+  <data name="titleDetalles" xml:space="preserve">
+    <value>Nuestros Trabajos - Detalles  |  JMHermanos</value>
+  </data>
+  <data name="titleFachadas" xml:space="preserve">
+    <value>Nuestros Trabajos - Fachadas  |  JMHermanos</value>
+  </data>
+  <data name="titleHome" xml:space="preserve">
+    <value>Home  |  JMHermanos</value>
+  </data>
+  <data name="titleInteriores" xml:space="preserve">
+    <value>Nuestros Trabajos - Interiores  |  JMHermanos</value>
+  </data>
+  <data name="titleParcela" xml:space="preserve">
+    <value>Nuestros Trabajos - Parcelas  |  JMHermanos</value>
+  </data>
+  <data name="titlePresupuesto" xml:space="preserve">
+    <value>Tu Presupuesto  |  JMHermanos</value>
+  </data>
+  <data name="titleTrabajos" xml:space="preserve">
+    <value>Nuestros Trabajos  |  JMHermanos</value>
+  </data>
+  <data name="urlBaño" xml:space="preserve">
+    <value>Baño</value>
+  </data>
+  <data name="urlCocinas" xml:space="preserve">
+    <value>Cocina</value>
+  </data>
+  <data name="urlConocenos" xml:space="preserve">
+    <value>Conocenos</value>
+  </data>
+  <data name="urlContacto" xml:space="preserve">
+    <value>Contactar-Para-Reforma</value>
+  </data>
+  <data name="urlDetalles" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="urlFachadas" xml:space="preserve">
+    <value>Fachada</value>
+  </data>
+  <data name="urlHome" xml:space="preserve">
+    <value />
+  </data>
+  <data name="urlInteriores" xml:space="preserve">
+    <value>Interiores</value>
+  </data>
+  <data name="urlParcela" xml:space="preserve">
+    <value>Parcela</value>
+  </data>
+  <data name="urlPresupuesto" xml:space="preserve">
+    <value>Tu-Presupuesto</value>
+  </data>
+  <data name="urlQuienSomos" xml:space="preserve">
+    <value>#quienSomos</value>
+  </data>
+  <data name="urlTrabajos" xml:space="preserve">
+    <value>Nuestros-Trabajos</value>
+  </data>
+  <data name="urlVideo" xml:space="preserve">
+    <value>#video</value>
+  </data>
+</root>

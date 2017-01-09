@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = Resources.Routes.titleTrabajos;
+    ViewBag.MetaDescription = Resources.Routes.metaNuestroTrabajo;
+}
+@Html.Partial("_BrandPicture")
+
+<!-- TRABAJOS ===================================================-->
+<div class="container-fluid placeHolder" id="todosTrabajos">
+    <div class="wrapper CenterNavbar">
+        <h2 class="strongGreenFont text-center" id="menuNuestrosTrabajos" runat="server">Nuestros trabajos</h2>
+        <h3 class="text-center" id="globalNuetrosTrabajos" runat="server">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sapiente voluptatem, ratione vitae autem earum ipsam non id! Suscipit, odio.</h3>
+    </div>
+
+    <!-- BAÑOS -->
+    <div class="col-md-6">
+
+        <div class="imageblock img-responsive CenterNavbar-xs CenterNavbar-sm rightNavbar-md rightNavbar-lg">
+            <img src="img\misTrabajos\bañoCasa.jpeg" alt="paisaje" class="img-responsive" />
+
+            <div class="textWrapper img-responsive">
+
+                <div class="firstCol white text-right centerInsideV">
+                    <div class="item grayFont bold" id="bañoTitulo" runat="server">Baño</div>
+                    <div class="price yellowFont bold" id="precioBaño" runat="server">800 €</div>
+                    <a href= "/@Resources.Routes.urlTrabajos/@Resources.Routes.urlBaño" class="link blackFont bold">VER MAS&nbsp;&nbsp;<span class="fa fa-arrow-circle-right"></span></a>
+                </div>
+
+                <div class="secondCol yellow text-center centerInsideV">
+                    <span>B</span>
+                </div>
+
+            </div>
+            <!-- end textWrapper -->
+        </div>
+        <!-- end imageblock -->
+    </div>
+    <!-- end BAÑOS col-lg-6 -->
+    <!-- INTERIOR -->
+    <div class="col-md-6">
+
+        <div class="imageblock img-responsive CenterNavbar-xs CenterNavbar-sm leftNavbar-md leftNavbar-lg">
+            <img src="img\misTrabajos\acabados.jpeg" alt="paisaje" class="img-responsive" />
+
+            <div class="textWrapper img-responsive">
+
+                <div class="firstCol white text-right centerInsideV">
+                    <div class="item grayFont bold" id="interioresTitulo" runat="server">Interiores</div>
+                    <div class="price lightGreenFont bold" id="precioInteriores" runat="server">900 €</div>
+                    <a href= "/@Resources.Routes.urlTrabajos/@Resources.Routes.urlInteriores" class="link blackFont bold">VER MAS&nbsp;&nbsp;<span class="fa fa-arrow-circle-right"></span></a>
+                </div>
+
+                <div class="secondCol lightGreen text-center centerInsideV">
+                    <span>I</span>
+                </div>
+            </div>
+            <!-- end textWrapper -->
+        </div>
+        <!-- end imageblock -->
+
+    </div>
+    <!-- end COCINAS col-lg-6 -->
+    
+    @Html.Partial("_TrabajosRow")
+
+    <!-- DETALLES -->
+    <div class="col-md-6">
+
+        <div class="imageblock img-responsive CenterNavbar-xs CenterNavbar-sm rightNavbar-md rightNavbar-lg">
+            <img src="img\misTrabajos\parcelaSalon.jpeg" alt="paisaje" class="img-responsive" />
+
+            <div class="textWrapper img-responsive">
+
+                <div class="firstCol white text-right centerInsideV">
+                    <div class="item grayFont bold" id="detallesTitulo" runat="server">Detalles</div>
+                    <div class="price yellowFont bold" id="precioDetalles" runat="server">800 €</div>
+                    <a href= "/@Resources.Routes.urlTrabajos/@Resources.Routes.urlDetalles" class="link blackFont bold">VER MAS&nbsp;&nbsp;<span class="fa fa-arrow-circle-right"></span></a>
+                </div>
+
+                <div class="secondCol lightGreen text-center centerInsideV">
+                    <span>D</span>
+                </div>
+
+            </div>
+            <!-- end textWrapper -->
+        </div>
+        <!-- end imageblock -->
+    </div>
+    <!-- end FITH col-lg-6 -->
+    <!-- COCINAS -->
+    <div class="col-md-6">
+
+        <div class="imageblock img-responsive CenterNavbar-xs CenterNavbar-sm leftNavbar-md leftNavbar-lg">
+            <img src="img\misTrabajos\cocina.jpeg" alt="paisaje" class="img-responsive" />
+
+            <div class="textWrapper img-responsive">
+
+                <div class="firstCol white text-right centerInsideV">
+                    <div class="item grayFont bold" id="cocinaTitulo" runat="server">Cocinas</div>
+                    <div class="price yellowFont bold" id="precioCocinas" runat="server">800 €</div>
+                    <a href= "/@Resources.Routes.urlTrabajos/@Resources.Routes.urlCocinas" class="link blackFont bold">VER MAS&nbsp;&nbsp;<span class="fa fa-arrow-circle-right"></span></a>
+                </div>
+
+                <div class="secondCol gray text-center centerInsideV">
+                    <span>C</span>
+                </div>
+
+            </div>
+            <!-- end textWrapper -->
+        </div>
+        <!-- end imageblock -->
+    </div>
+    <!-- end SIX col-lg-6 -->
+
+</div>
+<!-- end container-fluid -->

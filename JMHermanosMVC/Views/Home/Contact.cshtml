@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = Resources.Routes.titleContact;
+    ViewBag.MetaDescription = Resources.Routes.metaContacto;
+}
+
+@Html.Partial("_BrandPicture")
+<!-- CONTACT FORM ======================================================= -->
+<div class="container-fluid yellow placeHolder" id="contactForm">
+
+    <div class="backgroundForm col-lg-5 hidden-xs hidden-sm hidden-md resetPadding-lg">
+
+        <!-- first column -->
+        <div class="headerBackground yellowFont bold fontLobster">JMHermanos</div>
+
+        <div class="wrapperLeftSide center-vertically">
+            <ul class="CenterNavbar list-unstyled whiteFont">
+                <li>
+                    <h1 class="fontLobster lightGreenFont" id="compromisoTitulo1">Nuestro</h1>
+                </li>
+                <li>
+                    <h1 class="indented fontLobster lightGreenFont" id="compromisoTitulo2">compromiso</h1>
+                </li>
+                <li>
+                    <p id="compromisoTexto" class="backgroundSentence blackFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,.</p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- end first column -->
+
+    <div class="col-lg-7">
+        <div class="wrapperForm CenterNavbar">
+            <!-- wrapperForm -->
+
+            <div class="col-sm-12">
+                <h2 class="m10" id="contactoTitulo">Contactanos</h2>
+                <h3 class="m30" id="contactoTexto">Quieres preguntarnos algo? Usa este formulario, si adjuntas un teléfono te llamaremos.</h3>
+            </div>
+            @*BEGIN FORM*@
+            <div class="col-sm-6">
+                <!-- nested col1-->
+                <p>Nombre</p>
+                <input type="text" name="nombre" class="textBoxRow m30">
+            </div>
+
+            <div class="col-sm-6">
+                <!-- nested col2 -->
+                <p>Email</p>
+                <input type="text" name="email" class="textBoxRow m30">
+            </div>
+
+            <div class="col-sm-12">
+                <!-- nested col3 -->
+                <p>Teléfono (Opcional)</p>
+                <input type="text" name="telefono" class="textBoxRow m30">
+            </div>
+
+            <div class="col-sm-12">
+                <p>Mensaje</p>
+                <textarea name="mensaje" id="" cols="1" rows="1" class="textBoxSquare m40"></textarea>
+            </div>
+
+            <div class="col-sm-6">
+                <!-- nested col3 -->
+                @*<p>Prueba que no eres un robot:</p>
+                <BotDetect:Captcha ID="captcha" />
+                <input type="text" name="telefono" class="textBoxRow m30">*@
+            </div>
+
+            <!-- end nested col3 -->
+            <div class="col-lg-offset-6 col-lg-6
+						col-md-offset-6 col-md-6
+						col-sm-offset-6 col-sm-6 m30">
+                <!-- button -->
+                <a href="#" class="buttonLink contactButton" id="buttonSend">
+                    Enviar<span class="fa fa-envelope whiteFont"></span>
+                </a>
+
+                <p>
+                    <!-- UpdateProgress -->
+                <p class="labelCss strongGreenFont"><span class="fa fa-spinner fa-pulse fa-2x strongGreenFont"></span>&nbsp;&nbsp;Enviando...</p>
+                <!-- Success Message -->
+
+            </div>
+
+            <!-- end button -->
+            @*END FORM*@
+        </div>
+        <!-- end wrapperForm -->
+
+    </div>
+    <!-- end col-lg-6 -->
+</div>
+<!-- end container -->
